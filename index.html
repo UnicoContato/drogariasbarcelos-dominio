@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drogarias Barcelos</title>
+    <meta name="description" content="Drogaria Barcelos - Cuidando de você com confiança e dedicação.">
+    <meta property="og:title" content="Drogarias Barcelos">
+    <meta property="og:description" content="Mais do que uma farmácia, queremos ser um apoio no dia a dia da nossa comunidade.">
+    <meta property="og:image" content="http://drogariasbarcelos.com.br/img/1.jpeg">
+    <meta property="og:url" content="http://drogariasbarcelos.com.br/">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2F4899',
+                            dark: '#1e3066'
+                        },
+                        secondary: {
+                            DEFAULT: '#5DBB63',
+                            dark: '#4a994f'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-transform duration-300 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary tracking-tight">
+                        <span class="text-secondary">+</span> Drogarias Barcelos
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-primary transition font-semibold">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-primary transition font-semibold">Sobre Nós</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-primary transition font-semibold">Serviços</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-primary transition font-semibold">Galeria</a>
+                    <a href="#contato" class="text-gray-700 hover:text-primary transition font-semibold">Contato</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/5522981818272" target="_blank" class="flex items-center gap-2 bg-secondary hover:bg-secondary-dark text-white px-5 py-2.5 rounded-full font-semibold transition shadow-lg shadow-green-500/30">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden glass-menu border-t border-white/20">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#inicio" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50 rounded-md transition">Início</a>
+                <a href="#sobre" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50 rounded-md transition">Sobre Nós</a>
+                <a href="#servicos" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50 rounded-md transition">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50 rounded-md transition">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50 rounded-md transition">Contato</a>
+                <a href="https://wa.me/5522981818272" target="_blank" class="flex items-center gap-2 mt-4 bg-secondary text-white px-4 py-3 rounded-md font-bold justify-center shadow-md">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Fazer Pedido
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/3.jpeg" alt="Fachada Drogarias Barcelos" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-black/70"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                Drogarias Barcelos
+            </h1>
+            <p class="text-xl md:text-3xl text-gray-200 mb-10 font-light drop-shadow-md">
+                Mais que medicamentos, dedicação à sua vida.
+            </p>
+            <a href="https://wa.me/5522981818272" target="_blank" class="inline-flex items-center gap-3 bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(93,187,99,0.5)]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Faça seu Pedido
+            </a>
+        </div>
+        <div class="absolute bottom-10 z-10 animate-bounce">
+            <a href="#sobre" class="text-white opacity-80 hover:opacity-100">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 relative section-observe">
+        <div class="absolute inset-0 bg-primary/5 -skew-y-3 origin-top-left z-0"></div>
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <div class="glass-card rounded-3xl p-10 md:p-16 shadow-2xl border border-white text-center transform transition-all duration-700 translate-y-10 opacity-0 slide-up-element">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8 relative inline-block">
+                    Sobre Nós
+                    <span class="absolute -bottom-2 left-1/4 w-1/2 h-1 bg-secondary rounded-full"></span>
+                </h2>
+                <div class="space-y-6 text-lg text-gray-700 leading-relaxed font-light">
+                    <p>A Drogaria Barcelos nasceu com um propósito simples, mas muito importante: cuidar das pessoas com atenção, confiança e proximidade.</p>
+                    <p>Mais do que uma farmácia, queremos ser um apoio no dia a dia da nossa comunidade, oferecendo não apenas medicamentos, mas também atendimento humano, orientação e praticidade para cada cliente que entra em nossa loja.</p>
+                    <p>Acreditamos que a saúde e o bem-estar começam no cuidado, no respeito e na dedicação a cada pessoa e a cada família. Por isso, a Drogaria Barcelos foi criada para ser um espaço de confiança, onde qualidade, responsabilidade e carinho caminham juntos.</p>
+                    <p>Estamos aqui para facilitar sua rotina, atender às suas necessidades e construir, todos os dias, uma relação próxima com você. Esse é o nosso compromisso: estar presentes, cuidar de verdade e fazer parte da sua vida com seriedade e atenção.</p>
+                    <p class="text-xl font-semibold text-primary pt-4 italic">Drogaria Barcelos — cuidando de você com confiança e dedicação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-white section-observe">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-16">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="glass-card bg-gray-50/50 p-8 rounded-2xl border border-gray-100 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center slide-up-element opacity-0" style="transition-delay: 100ms;">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Medicamentos</h3>
+                    <p class="text-gray-600">Ampla linha de medicamentos genéricos, de referência e similares com os melhores preços e descontos de até 90%.</p>
+                </div>
+
+                <div class="glass-card bg-gray-50/50 p-8 rounded-2xl border border-gray-100 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center slide-up-element opacity-0" style="transition-delay: 200ms;">
+                    <div class="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center mb-6 text-secondary">
+                        <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Perfumaria</h3>
+                    <p class="text-gray-600">Completo setor de higiene pessoal, cosméticos, cuidados capilares e infantis das melhores marcas do mercado.</p>
+                </div>
+
+                <div class="glass-card bg-gray-50/50 p-8 rounded-2xl border border-gray-100 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center slide-up-element opacity-0" style="transition-delay: 300ms;">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Atendimento</h3>
+                    <p class="text-gray-600">Equipe preparada e humanizada para tirar suas dúvidas, além de serviço de entrega em domicílio rápida e eficiente.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-gray-100 section-observe relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-16">Conheça Nossa Loja</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-lg group slide-up-element opacity-0">
+                    <img src="img/1.jpeg" alt="Fachada Drogaria" class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group slide-up-element opacity-0" style="transition-delay: 100ms;">
+                    <img src="img/2.jpeg" alt="Entrada e Banner" class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group slide-up-element opacity-0" style="transition-delay: 200ms;">
+                    <img src="img/3.jpeg" alt="Corredor de Produtos" class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group slide-up-element opacity-0 md:col-span-2 lg:col-span-1">
+                    <img src="img/4.jpeg" alt="Fraldas e Infantil" class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group slide-up-element opacity-0 md:col-span-2 lg:col-span-2">
+                    <img src="img/5.jpeg" alt="Prateleira de Cosméticos" class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-white section-observe">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="glass-card bg-primary text-white p-10 md:p-14 rounded-3xl shadow-2xl flex flex-col justify-center slide-up-element opacity-0">
+                <h2 class="text-3xl font-bold mb-10 text-secondary text-center">Contato e Localização</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-center md:text-left">
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-primary-100 text-sm font-semibold uppercase tracking-wider mb-2">Empresa</p>
+                            <p class="text-xl font-bold">DROGARIAS BARCELOS LTDA</p>
+                            <p class="text-white/80 text-sm">CNPJ: 50.668.897/0001-02</p>
+                        </div>
+
+                        <div>
+                            <p class="text-primary-100 text-sm font-semibold uppercase tracking-wider mb-2">Contato</p>
+                            <p class="text-lg flex items-center justify-center md:justify-start gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                (22) 98181-8272
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-primary-100 text-sm font-semibold uppercase tracking-wider mb-2">Endereço</p>
+                            <p class="text-lg">Av Julio Cesar Domingos Lopes, 0 - Loja 01</p>
+                            <p class="text-lg">Valão do Barro</p>
+                            <p class="text-lg">São Sebastião do Alto - RJ</p>
+                            <p class="text-white/80 text-sm mt-1">CEP: 28.555-000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary-dark text-white pt-12 pb-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="font-bold text-xl mb-1 text-secondary">+ Drogarias Barcelos</p>
+                <p class="text-sm text-gray-400">DROGARIAS BARCELOS LTDA | CNPJ: 50.668.897/0001-02</p>
+            </div>
+            
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <button id="open-modal-btn" class="text-sm text-gray-300 hover:text-white transition underline underline-offset-4">
+                    Política de Privacidade
+                </button>
+                <p class="text-sm text-gray-500">
+                    © <span id="current-year"></span> Drogarias Barcelos. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div id="modal-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"></div>
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10 transform scale-95 opacity-0 transition-all duration-300" id="modal-content">
+            <div class="sticky top-0 bg-white/90 backdrop-blur-md px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="text-2xl font-bold text-primary">Política de Privacidade</h3>
+                <button id="close-modal-btn" class="text-gray-400 hover:text-red-500 transition focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="p-6 text-gray-600 space-y-4">
+                <p>A <strong>Drogarias Barcelos</strong> está comprometida em proteger a sua privacidade. Esta política descreve como lidamos com as informações no nosso site institucional.</p>
+                
+                <h4 class="font-bold text-gray-800 mt-4">1. Coleta de Dados</h4>
+                <p>Nosso site possui caráter meramente institucional e informativo. Não utilizamos formulários de contato internos, sistemas de login ou banco de dados para capturar informações pessoais de nossos visitantes de forma direta em nossa página.</p>
+
+                <h4 class="font-bold text-gray-800 mt-4">2. Contato via WhatsApp</h4>
+                <p>Ao clicar no botão "Peça pelo WhatsApp", você será redirecionado para o aplicativo WhatsApp, gerido pela Meta Platforms, Inc. As informações trocadas durante o atendimento via aplicativo estão sujeitas aos termos de uso e política de privacidade do próprio WhatsApp. A Drogarias Barcelos utilizará os dados fornecidos na conversa unicamente para o propósito de atendimento, orçamento e entrega de produtos.</p>
+
+                <h4 class="font-bold text-gray-800 mt-4">3. Cookies</h4>
+                <p>Podemos utilizar cookies estritamente necessários para o funcionamento básico do site.</p>
+
+                <h4 class="font-bold text-gray-800 mt-4">4. Alterações nesta Política</h4>
+                <p>Reservamo-nos o direito de modificar esta política de privacidade a qualquer momento. Alterações e esclarecimentos surtirão efeito imediatamente após sua publicação no site.</p>
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>
